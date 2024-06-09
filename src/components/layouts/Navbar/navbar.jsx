@@ -1,5 +1,5 @@
 import { FaBell } from "react-icons/fa";
-import { Li, Nav, Ul, Dropdown } from "./navbar.styled";
+import { Li, Nav, Ul } from "./navbar.styled";
 
 function Navbar() {
   return (
@@ -8,13 +8,11 @@ function Navbar() {
         <Ul>
           <ul>
             <Li>
-            
               <li>
                 <a class="active" href="#home">
                   Home
                 </a>
               </li>
-             
             </Li>
             <Li>
               <li>
