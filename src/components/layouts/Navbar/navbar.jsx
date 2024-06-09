@@ -1,8 +1,5 @@
-import { Li, Nav, Ul } from "./navbar.styled";
-import { FaBell } from 'react-icons/fa';
-import { FaSearch } from 'react-icons/fa';
-
-
+import { FaBell } from "react-icons/fa";
+import { Li, Nav, Ul, Dropdown } from "./navbar.styled";
 
 function Navbar() {
   return (
@@ -11,11 +8,13 @@ function Navbar() {
         <Ul>
           <ul>
             <Li>
+            
               <li>
                 <a class="active" href="#home">
                   Home
                 </a>
               </li>
+             
             </Li>
             <Li>
               <li>
@@ -29,8 +28,7 @@ function Navbar() {
             </Li>
             <Li>
               <li>
-                <input type="text" placeholder="Search.."  />
-    
+                <input type="text" placeholder="Search.." />
               </li>
             </Li>
             <Li>
@@ -52,7 +50,9 @@ function Navbar() {
               <li>
                 <Li>
                   <li>
-                    <a href="#about">Login/SignUp <FaBell /></a>
+                    <a href="#about">
+                      Login/SignUp <FaBell />
+                    </a>
                   </li>
                 </Li>
               </li>

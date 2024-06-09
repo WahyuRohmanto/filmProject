@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  background-color: #333;
+  background-color: black;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
   justify-content: center;
   align-items: center;
   display: flex;
+  padding: 20px 0px;
   @media (max-width: 768px) {
-    flex-direction: column; // Ubah tata letak menjadi vertikal
+    flex-direction: column; 
   }
 `;
+
 export const Ul = styled.ul`
   list-style-type: none;
   margin: 0;
@@ -19,7 +21,8 @@ export const Ul = styled.ul`
   align-items: center;
   display: flex;
   @media (max-width: 768px) {
-    flex-direction: column; // Ubah tata letak menjadi vertikal
+    flex-direction: column;
+    padding: 10px 0; // Tambahkan padding untuk tampilan vertikal
   }
 `;
 
@@ -27,6 +30,15 @@ export const Li = styled.li`
   float: left;
   text-decoration: none;
   list-style-type: none;
+  margin-right: 15px; // Tambahkan margin kanan untuk jarak antar item
+
+  @media (max-width: 768px) {
+    float: none; // Hapus float untuk tampilan vertikal
+    margin-right: 0; 
+    margin-bottom: 10px; // Tambahkan margin bawah untuk jarak antar item
+    width: 100%; // Lebar penuh pada tampilan vertikal
+  }
+
   a {
     display: block;
     color: white;
@@ -43,6 +55,4 @@ export const Li = styled.li`
     border: none;
     border-radius: 5px;
   }
-  
-
 `;
